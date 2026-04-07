@@ -1,4 +1,4 @@
-import { assets } from '@/assets/assets'
+import { assets, resumePdf } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
@@ -37,9 +37,7 @@ const Header = () => {
             transition={{duration: 0.6, delay: 0.7}}
             className='max-w-2xl mx-auto font-Ovo text-sm sm:text-base px-4'
         >
-            Based in Raleigh, NC, I create modern web applications with clean code and exceptional user experiences. 
-            With expertise in React, Node.js, and cloud technologies, I've helped startups and enterprises build 
-            scalable solutions that users love.
+            I am based in Raleigh, North Carolina, and I build modern web applications with maintainable code and interfaces that respect the user. My experience spans React and Node.js ecosystems, Spring and Java services, and cloud-backed deployments for teams that need software they can extend with confidence.
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4 w-full max-w-md'>
@@ -58,7 +56,8 @@ const Header = () => {
                     initial={{y: 30, opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
                     transition={{duration: 0.6, delay: 1.2}}
-                    href="/sample-resume.pdf" download 
+                    href={resumePdf.href}
+                    download={resumePdf.downloadFilename}
                     className='px-6 sm:px-8 md:px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white text-black dark:bg-darkTheme dark:text-white dark:border-white/50 text-sm sm:text-base w-full sm:w-auto justify-center'
                 >
                     my resume <Download className='w-4 h-4 dark:text-white'/>

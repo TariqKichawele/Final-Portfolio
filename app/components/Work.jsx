@@ -39,7 +39,7 @@ const Work = ({isDarkMode}) => {
             transition={{ delay: 0.6, duration: 0.5 }}
             className='text-center max-w-3xl mx-auto mt-5 mb-16 font-Ovo text-sm sm:text-base px-4 text-gray-600 dark:text-gray-300'
         >
-            I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
+            I have worked on projects ranging from marketing sites to full-stack applications with authentication, APIs, and third-party integrations. The work below highlights products where I owned features across design, implementation, and deployment.
         </motion.p>
 
         <motion.div
@@ -119,9 +119,9 @@ const Work = ({isDarkMode}) => {
                                     href={project.github} 
                                     target='_blank' 
                                     rel='noopener noreferrer'
-                                    className='flex items-center gap-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-black px-4 py-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200'
+                                    className='flex items-center gap-2 border border-neutral-400 dark:border-neutral-500 text-neutral-900 px-4 py-2 rounded-lg bg-neutral-50 hover:bg-neutral-100 dark:bg-neutral-100 dark:hover:bg-neutral-200 transition-colors duration-200'
                                 >
-                                    <Github className='w-4 h-4' />
+                                    <Github className='w-4 h-4 shrink-0' />
                                     Source
                                 </a>
                             )}
@@ -135,7 +135,7 @@ const Work = ({isDarkMode}) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.3, duration: 0.5 }}
-            href="https://github.com/yourusername" 
+            href="https://github.com/TariqKichawele" 
             target="_blank"
             rel="noopener noreferrer"
             className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-6 sm:px-8 md:px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:!text-white dark:border-white dark:hover:bg-darkHover dark:hover:!text-black text-sm sm:text-base'

@@ -69,7 +69,7 @@ const Contact = () => {
             transition={{ delay: 0.7, duration: 0.5 }}
             className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-sm sm:text-base px-4'
         >
-            I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.
+            I would love to hear from you about collaborations, roles, or technical questions. Please send your name, email, and message through the form below and I will get back to you as soon as I can.
         </motion.p>
 
         <motion.form

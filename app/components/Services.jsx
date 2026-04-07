@@ -2,14 +2,38 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
-import { Globe, Smartphone, Palette, Brush, ArrowRight } from 'lucide-react'
+import { Globe, Smartphone, Palette, Code2, ArrowRight } from 'lucide-react'
 
 const Services = () => {
   const serviceData = [
-    { icon: Globe, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: Smartphone, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: Palette, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: Brush, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    {
+      icon: Globe,
+      title: 'Web design',
+      description:
+        'I plan layout structure, typography, and responsive behavior so pages stay readable and consistent from phone to desktop. The goal is clear visual hierarchy, accessible markup, and handoff-friendly design that engineers can implement without guesswork.',
+      link: '',
+    },
+    {
+      icon: Smartphone,
+      title: 'Mobile app',
+      description:
+        'Mobile app development is building software purpose-built for phones and tablets, covering navigation patterns, touch targets, networking, and performance on real devices. I emphasize stable releases, sensible state handling, and experiences that feel natural on small screens.',
+      link: '',
+    },
+    {
+      icon: Palette,
+      title: 'UI/UX design',
+      description:
+        'UI and UX work starts with understanding what users are trying to accomplish and removing friction from every step of the journey. That includes user flows, wireframes, consistent components, and validation so the final interface feels intuitive before a single line of production code ships.',
+      link: '',
+    },
+    {
+      icon: Code2,
+      title: 'Web development',
+      description:
+        'Web development is the full path from idea to deployed product, including frontends, backend services, data layers, and automation around testing and releases. I rely on modern frameworks, solid API boundaries, and maintainable architecture so features can grow without slowing the team down.',
+      link: '',
+    },
   ];
 
   return (
@@ -44,7 +68,7 @@ const Services = () => {
         transition={{ delay: 0.7, duration: 0.5 }}
         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-sm sm:text-base px-4'
       >
-        I create modern web applications with clean code and exceptional user experiences, helping businesses build scalable solutions that drive results.
+        I create modern web applications with clean code and thoughtful user experiences. I partner with teams to define requirements, ship iteratively, and build scalable solutions that stay reliable after launch.
       </motion.p>
 
         <motion.div

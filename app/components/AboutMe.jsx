@@ -6,9 +6,24 @@ import { Code2, GraduationCap, FolderOpen } from 'lucide-react'
 
 const About = ({isDarkMode}) => {
   const infoList = [
-    { icon: Code2, title: 'Languages', description: 'HTML, CSS, Java, TypeScript, Python' },
-    { icon: GraduationCap, title: 'Education', description: 'Bsc Public Health' },
-    { icon: FolderOpen, title: 'Projects', description: 'Built more than 10 projects' }
+    {
+      icon: Code2,
+      title: 'Languages',
+      description:
+        'I work across TypeScript, Python, Java, C++, C#, and HTML/CSS, choosing the right stack for services, scripts, and interfaces.',
+    },
+    {
+      icon: GraduationCap,
+      title: 'Education',
+      description:
+        'I earned a Bachelor of Science from the University of North Carolina at Charlotte with a minor in Communication Studies.',
+    },
+    {
+      icon: FolderOpen,
+      title: 'Projects',
+      description:
+        'Recent builds include Resonance, an AI text-to-speech platform, and YouTube-to-Chapters, which generates timestamped chapters from transcripts.',
+    },
   ];
 
   return (
@@ -39,7 +54,7 @@ const About = ({isDarkMode}) => {
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{duration: 0.8}}
-            className='flex w-full flex-col lg:flex-row items-center gap-10 sm:gap-16 lg:gap-20 my-20'
+            className='flex w-full flex-col lg:flex-row items-center justify-center gap-10 sm:gap-16 lg:gap-20 my-20 max-w-6xl mx-auto'
         >
             <motion.div
                 initial={{opacity: 0, scale: 0.9}}
@@ -56,11 +71,11 @@ const About = ({isDarkMode}) => {
                 className='flex-1 min-w-0'
             >
                 <p className='mb-10 max-w-2xl font-Ovo text-sm sm:text-base leading-loose'>
-                    I build web and mobile applications with clean code and creative UI/UX designs. I graduated from the University of North Carolina at Charlotte with a Bsc in Public Health 
-                    but pivoted into the tech industry. My journey in tech began at <a href="https://www.revature.com/" target='_blank' className='text-red-500 hover:underline'>Revature</a> as a Backend Developer
-                    where I gained experience in building scalable asnd efficient backend systems using Java, Spring Boot, and PostgreSQL. Also, I have worked 
-                    at <a href="https://www.scaleai.com/" target='_blank' className='text-red-500 hover:underline'>Scale AI</a> where I evaluated, ranked, and provided feedback on AI-generated code to improve model accuracies and designed and answered 
-                    computer science-related questions to enhance AI training datasets.
+                    I&apos;m a full-stack engineer who ships features across design, implementation, testing, and deployment. I hold a Bachelor of Science from the
+                    University of North Carolina at Charlotte with a minor in Communication Studies. At <a href="https://www.lenovo.com/" target='_blank' rel="noopener noreferrer" className='text-red-500 hover:underline'>Lenovo</a>, I worked as a FullStack Software Engineer on Spring Boot
+                    services and Java REST APIs backed by SQL, collaborating in Agile sprints, code reviews, and CI/CD releases. At <a href="https://www.revature.com/" target='_blank' rel="noopener noreferrer" className='text-red-500 hover:underline'>Revature</a>, I built TypeScript
+                    REST APIs with Node.js using test-driven development, plus JWT authentication, role-based access control, and secure API patterns. On the side I&apos;ve shipped products like
+                    Resonance—an AI text-to-speech platform with tRPC, TanStack Query, Prisma, and PostgreSQL—and YouTube-to-Chapters, which turns transcripts into GPT-assisted timestamped chapters with OAuth via NextAuth.
                 </p>
 
                 <motion.ul

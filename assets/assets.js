@@ -78,16 +78,23 @@ export const assets = {
     profile_img_2,
 };
 
+/** Served from /public — use for any “My resume” download link */
+export const resumePdf = {
+    href: '/tariq-kichawele-resume.pdf',
+    downloadFilename: 'Tariq Kichawele Resume.pdf',
+};
+
 export const workData = [
     {
-        title: 'Podcastr',
-        description: 'A comprehensive podcast platform featuring AI-powered podcast generation, user authentication, and real-time audio streaming. Built with modern web technologies for optimal performance.',
-        bgImage: '/podcast.png',
-        link: 'https://podcastr-beryl-chi.vercel.app',
-        github: 'https://github.com/TariqKichawele/podcastr',
+        title: 'YouTube to Chapters',
+        description:
+            'A Next.js app that turns public YouTube watch URLs into timestamped chapter lines you can paste into a video description. It pulls captions through a third-party API, uses GPT-4o to propose natural breakpoints aligned with the transcript, and saves each run to your dashboard with Google or Discord sign-in, usage limits, and optional Stripe subscriptions.',
+        bgImage: '/youtube-to-chapters.png',
+        link: 'https://youtube-to-chapters-ecru.vercel.app',
+        github: 'https://github.com/TariqKichawele/Youtube-to-Chapters',
         status: 'Completed',
-        date: 'December 2024',
-        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Convex', 'Clerk']
+        date: 'April 2026',
+        technologies: ['Next.js', 'TypeScript', 'Prisma', 'NextAuth.js', 'OpenAI']
     },
     {
         title: 'Architeck AI',
@@ -110,28 +117,70 @@ export const workData = [
         technologies: ['React', 'GSAP', 'Tailwind CSS', 'JavaScript']
     },
     {
-        title: 'Store It',
-        description: 'A comprehensive file storage and management solution with secure cloud storage, file sharing capabilities, and intuitive user interface for seamless file organization.',
-        bgImage: '/storeit.png',
-        link: 'https://store-it-theta-five.vercel.app',
-        github: 'https://github.com/TariqKichawele/store-it',
+        title: 'Resonance',
+        description: 'A web application for AI text-to-speech and voice management. Users sign in with organizations, generate speech from text with configurable voices, browse generation history, and manage custom voices with usage-based billing.',
+        bgImage: '/resonance.png',
+        link: 'https://resonance-eosin.vercel.app',
+        github: 'https://github.com/TariqKichawele/Resonance',
         status: 'Completed',
-        date: 'September 2024',
-        technologies: ['Next.js', 'TypeScript', 'Appwrite', 'Tailwind CSS', 'React Hook Form']
+        date: 'April 2026',
+        technologies: ['Next.js', 'TypeScript', 'tRPC', 'Prisma', 'Clerk']
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    {
+        icon: assets.web_icon,
+        title: 'Web design',
+        description:
+            'I plan layout structure, typography, and responsive behavior so pages stay readable and consistent from phone to desktop. The goal is clear visual hierarchy, accessible markup, and handoff-friendly design that engineers can implement without guesswork.',
+        link: '',
+    },
+    {
+        icon: assets.mobile_icon,
+        title: 'Mobile app',
+        description:
+            'Mobile app development is building software purpose-built for phones and tablets, covering navigation patterns, touch targets, networking, and performance on real devices. I emphasize stable releases, sensible state handling, and experiences that feel natural on small screens.',
+        link: '',
+    },
+    {
+        icon: assets.ui_icon,
+        title: 'UI/UX design',
+        description:
+            'UI and UX work starts with understanding what users are trying to accomplish and removing friction from every step of the journey. That includes user flows, wireframes, consistent components, and validation so the final interface feels intuitive before a single line of production code ships.',
+        link: '',
+    },
+    {
+        icon: assets.code_icon,
+        title: 'Web development',
+        description:
+            'Web development is the full path from idea to deployed product, including frontends, backend services, data layers, and automation around testing and releases. I rely on modern frameworks, solid API boundaries, and maintainable architecture so features can grow without slowing the team down.',
+        link: '',
+    },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    {
+        icon: assets.code_icon,
+        iconDark: assets.code_icon_dark,
+        title: 'Languages',
+        description:
+            'I work across TypeScript, Python, Java, C++, C#, and HTML/CSS, choosing the right stack for services, scripts, and interfaces.',
+    },
+    {
+        icon: assets.edu_icon,
+        iconDark: assets.edu_icon_dark,
+        title: 'Education',
+        description:
+            'I earned a Bachelor of Science from the University of North Carolina at Charlotte with a minor in Communication Studies.',
+    },
+    {
+        icon: assets.project_icon,
+        iconDark: assets.project_icon_dark,
+        title: 'Projects',
+        description:
+            'Recent builds include Resonance, an AI text-to-speech platform, and YouTube-to-Chapters, which generates timestamped chapters from transcripts.',
+    },
 ];
 
 export const toolsData = [

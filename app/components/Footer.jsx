@@ -3,6 +3,8 @@ import Image from 'next/image'
 import React from 'react'
 
 const Footer = ({isDarkMode}) => {
+  const currentYear = new Date().getFullYear()
+
   return (
     <div className='mt-20 px-4 sm:px-6'>
       <div className='text-center'>
@@ -17,11 +19,11 @@ const Footer = ({isDarkMode}) => {
       </div>
 
     <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-4 sm:mx-[5%] lg:mx-[10%] mt-12 py-6'>
-        <p className='text-xs sm:text-sm lg:text-base'>© 2025 Tariq Kichawele. All rights reserved.</p>
+        <p className='text-xs sm:text-sm lg:text-base'>© {currentYear} Tariq Kichawele. All rights reserved.</p>
         <ul className='flex items-center gap-6 sm:gap-8 lg:gap-10 justify-center mt-4 sm:mt-0 text-xs sm:text-sm lg:text-base'>
-            <li><a target='_blank' href="https://github.com" className='hover:underline'>GitHub</a></li>
-            <li><a target='_blank' href="https://linkedin.com" className='hover:underline'>LinkedIn</a></li>
-            <li><a target='_blank' href="https://twitter.com" className='hover:underline'>Twitter</a></li>
+            <li><a target='_blank' rel='noopener noreferrer' href='https://github.com/TariqKichawele' className='hover:underline'>GitHub</a></li>
+            <li><a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/tariq-kichawele' className='hover:underline'>LinkedIn</a></li>
+            <li><a target='_blank' rel='noopener noreferrer' href='https://x.com/_sudoTK' className='hover:underline'>Twitter</a></li>
         </ul>
     </div>
 
