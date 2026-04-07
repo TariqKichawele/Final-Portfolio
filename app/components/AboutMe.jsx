@@ -75,7 +75,7 @@ const About = ({isDarkMode}) => {
                     University of North Carolina at Charlotte with a minor in Communication Studies. At <a href="https://www.lenovo.com/" target='_blank' rel="noopener noreferrer" className='text-red-500 hover:underline'>Lenovo</a>, I worked as a FullStack Software Engineer on Spring Boot
                     services and Java REST APIs backed by SQL, collaborating in Agile sprints, code reviews, and CI/CD releases. At <a href="https://www.revature.com/" target='_blank' rel="noopener noreferrer" className='text-red-500 hover:underline'>Revature</a>, I built TypeScript
                     REST APIs with Node.js using test-driven development, plus JWT authentication, role-based access control, and secure API patterns. On the side I&apos;ve shipped products like
-                    Resonance—an AI text-to-speech platform with tRPC, TanStack Query, Prisma, and PostgreSQL—and YouTube-to-Chapters, which turns transcripts into GPT-assisted timestamped chapters with OAuth via NextAuth.
+                    Resonance—an AI text-to-speech platform with tRPC, TanStack Query, Prisma, and PostgreSQL—and YouTube-to-Chapters, which turns transcripts into timestamped chapters with OAuth via NextAuth.
                 </p>
 
                 <motion.ul
